@@ -64,8 +64,8 @@
 #endif
 
 //WiFi variable setup
-char ssid[] = "3bb";     // your network SSID (name)
-char pass[] = "0844025188";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "***";     // your network SSID (name)
+char pass[] = "***";    // your network password (use for WPA, or use as key for WEP)
 int status = WL_IDLE_STATUS;
 
 //UDP variables setup
