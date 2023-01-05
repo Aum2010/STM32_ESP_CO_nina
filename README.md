@@ -11,3 +11,9 @@ https://github.com/arduino-libraries/WiFiNINA
 
 ## esp32 flash tool
 https://www.espressif.com/en/support/download/other-tools
+
+## stm32 board management
+https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/package_stm_index.json
+
+## stm32 prog
+https://www.st.com/en/development-tools/stm32cubeprog.html
