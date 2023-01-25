@@ -64,8 +64,8 @@
 #endif
 
 //WiFi variable setup
-char ssid[] = "***";     // your network SSID (name)
-char pass[] = "***";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "3bb";     // your network SSID (name)
+char pass[] = "0844025188";    // your network password (use for WPA, or use as key for WEP)
 int status = WL_IDLE_STATUS;
 
 //UDP variables setup
@@ -169,10 +169,16 @@ void loop() {
   }
 
     while (status != WL_CONNECTED) {
+
+    WiFi.setPins(SPIWIFI_SS, SPIWIFI_ACK, ESP32_RESETN, ESP32_GPIO0, &SPIWIFI);
+    WiFi.firmwareVersion();
+      
     Serial.print("Attempting to connect to SSID: ");
     Serial.println(ssid);
     // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
     status = WiFi.begin(ssid, pass);
+
+    WiFi.noLowPowerMode();
 
     // wait 10 seconds for connection:
     delay(10000);
